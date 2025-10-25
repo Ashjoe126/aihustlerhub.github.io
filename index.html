@@ -4,6 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Hustler Hub | Web3</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="AI Hustler Hub | UK-based Web3 & AI Hub exploring Crypto, Blockchain, and Meme Coin communities. Connect, learn, and network.">
+  <meta name="author" content="AI Hustler Hub | HustlerHub4u">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@HustlerHub4u">
+  <meta name="twitter:title" content="AI Hustler Hub | Web3">
+  <meta name="twitter:description" content="UK-based Web3 & AI Hub exploring Crypto, Blockchain & Meme Coin communities. Connect, learn, and network.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/Ashjoe126/aihustlerhub.github.io/main/banner.png">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="AI Hustler Hub | Web3">
+  <meta property="og:description" content="UK-based Web3 & AI Hub exploring Crypto, Blockchain & Meme Coin communities. Connect, learn, and network.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ashjoe126.github.io/">
+  <meta property="og:image" content="https://raw.githubusercontent.com/Ashjoe126/aihustlerhub.github.io/main/banner.png">
+
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -31,6 +50,13 @@
       max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease-in-out;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
     h2 {
       color: #0a1f44;
@@ -59,19 +85,31 @@
       font-weight: bold;
       color: #0a1f44;
     }
+    .focus-item small {
+      display: block;
+      font-weight: normal;
+      font-size: 0.85em;
+      margin-top: 10px;
+      color: #333;
+    }
     .join-button {
       display: inline-block;
       margin-top: 20px;
-      padding: 15px 30px;
-      background-color: #0a1f44;
+      padding: 18px 40px;
+      background: linear-gradient(90deg, #0a1f44, #152a5a);
       color: #fff;
       text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-      transition: background 0.3s;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1.1em;
+      letter-spacing: 0.5px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
     }
     .join-button:hover {
-      background-color: #152a5a;
+      background: linear-gradient(90deg, #152a5a, #1e3b7a);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+      transform: translateY(-2px);
     }
     footer {
       background: #0a1f44;
@@ -84,13 +122,40 @@
       color: #fff;
       text-decoration: underline;
     }
+    footer p:last-child {
+      font-size: 0.85em;
+      opacity: 0.7;
+      margin-top: 5px;
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+      header p {
+        font-size: 1em;
+      }
+      .focus-list {
+        flex-direction: column;
+      }
+      .focus-item {
+        flex: 1 1 100%;
+      }
+      .join-button {
+        width: 100%;
+        text-align: center;
+        padding: 16px 0;
+        font-size: 1em;
+      }
+    }
   </style>
 </head>
 <body>
 
 <header>
   <h1>AI Hustler Hub | Web3</h1>
-  <p>Connecting innovation in Crypto, AI & Meme Culture</p>
+  <p>UK-based Web3 & AI Hub | Exploring Crypto, Blockchain & Digital Innovation</p>
 </header>
 
 <section id="about">
@@ -101,23 +166,49 @@
 <section id="focus">
   <h2>Focus Areas</h2>
   <div class="focus-list">
-    <div class="focus-item">Crypto Innovation</div>
-    <div class="focus-item">Artificial Intelligence</div>
-    <div class="focus-item">Web3 Projects</div>
-    <div class="focus-item">Meme Coin Communities</div>
+    <div class="focus-item">
+      Crypto Innovation<br><small>Insights & projects shaping the blockchain ecosystem</small>
+    </div>
+    <div class="focus-item">
+      Artificial Intelligence<br><small>Exploring AI tools & Web3 integration</small>
+    </div>
+    <div class="focus-item">
+      Web3 Projects<br><small>Collaborations & emerging decentralized applications</small>
+    </div>
+    <div class="focus-item">
+      Meme Coin Communities<br><small>Analyzing trends & building network opportunities</small>
+    </div>
   </div>
 </section>
 
 <section id="connect">
   <h2>Connect</h2>
   <p>Follow us on X (Twitter) and join the hub for updates and networking:</p>
-  <a class="join-button" href="https://x.com/HustlerHub4u" target="_blank">Join the Hub</a>
+  <a class="join-button" href="mailto:aihustlerhub@gmail.com" target="_blank">Join the Hub</a>
+  <p style="margin-top:10px;">Follow us on X: <a href="https://x.com/HustlerHub4u" target="_blank">HustlerHub4u</a></p>
 </section>
 
 <footer>
   <p>© 2025 AI Hustler Hub | Web3 — London, United Kingdom</p>
-  <p>Connect with us: <a href="https://x.com/HustlerHub4u" target="_blank">X / Twitter</a></p>
+  <p>Connect: <a href="https://x.com/HustlerHub4u" target="_blank">X / Twitter</a> | <a href="mailto:aihustlerhub@gmail.com">Email</a></p>
+  <p>This hub is a professional network for Web3 innovators and AI enthusiasts.</p>
 </footer>
+
+<script>
+  // Fade-in sections on scroll
+  const sections = document.querySelectorAll('section');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+</script>
 
 </body>
 </html>
